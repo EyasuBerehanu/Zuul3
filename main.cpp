@@ -132,8 +132,8 @@ createRooms();
 
  void add(vector<char*>& inventory) {
         char* item = currentRoom->getStoredItems();
-        inventory.push_back(item);  // Add the item to the inventory vector
-        cout << "You added a " << item << " to your inventory." << endl;
+        inventory.push_back(item);
+	cout << "You added a " << item << " to your inventory." << endl;
         currentRoom->setItem("");  
 }
 

@@ -11,7 +11,6 @@ room::room() {
   currentRoom = nullptr;
   storedItems = nullptr;
   description = nullptr;
-  //item = nullptr;
 }
 room::room(char* cr, char* si, char* d) { //constructor for the DigitalMedia
 
@@ -28,7 +27,6 @@ room::~room() { //destructor for the DigitalMedia
     delete[] currentRoom;
     delete[] description;
     delete[] storedItems;
-    //   delete[] item;
 }
 
 char* room::getCurrentRoom(){
@@ -40,9 +38,6 @@ char* room::getDescription(){
 char* room::getStoredItems(){ //getter for the exits
     return storedItems;
 }
-//char* room::getItem(){ //getter for the exits
-//  return item;
-//}
 
  void room::setExit(char* direction, room* avalibleRooms){
   char* avaliableExits = new char[80];

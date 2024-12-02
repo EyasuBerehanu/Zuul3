@@ -13,8 +13,7 @@ protected:
     map<char*, room*> exits;
     char* storedItems;
   char* description;
-  //char* item;
- 
+   
 public:
     room(); 
     room(char* cr, char* si, char* d); //constructor that takes char pointer and the int
